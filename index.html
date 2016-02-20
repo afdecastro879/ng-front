@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="ng-front">
+<head>
+    <style type="text/css">
+        html, body { height: 100%; margin: 0; padding: 0; }
+        #map { height: 100%; }
+        .angular-google-map-container { height: 500px; }
+    </style>
+</head>
+<body>
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bower_components/lodash/dist/lodash.min.js"></script>
+<script type="text/javascript" src="bower_components/ngstorage/ngStorage.min.js"></script>
+<script type="text/javascript" src="bower_components/underscore/underscore-min.js"></script>
+<script type="text/javascript" src="bower_components/restangular/dist/restangular.min.js"></script>
+<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="bower_components/angular-simple-logger/dist/angular-simple-logger.js"></script>
+<script type="text/javascript" src="bower_components/angular-google-maps/dist/angular-google-maps.min.js"></script>
+<script type="text/javascript" src="js/ng-front/ng-front.module.js"></script>
+<script type="text/javascript" src="js/routes/routes.module.js"></script>
+<script type="text/javascript" src="js/routes/routes.config.js"></script>
+<script type="text/javascript" src="js/restangular/restangular.module.js"></script>
+<script type="text/javascript" src="js/restangular/restangular.config.js"></script>
+<script type="text/javascript" src="js/ng-front/ng-front.service.js"></script>
+<script type="text/javascript" src="js/ng-front/ng-front.controller.js"></script>
+<div ui-view=""></div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "arqu-ng-front",
+  "version": "0.0.0",
+  "main": "index.html",
+  "dependencies": {
+    "angular-ui-router": "0.2.13",
+    "angular": "1.4.2",
+    "angular-route": "1.4.2",
+    "ngstorage": "0.3.0",
+    "jquery": "2.1.3",
+    "underscore": "1.8.3",
+    "restangular": "1.5.1",
+    "angular-google-maps": "2.3.2"
+  }
+}

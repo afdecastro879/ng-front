@@ -1,0 +1,19 @@
+{
+  "instance":
+  {
+    "app": "jqservice",
+    "hostName": "localhost",
+    "ipAddr": "127.0.0.1",
+    "port": 8080,
+    "securePort": 8081,
+    "vipAddress": "jq.test.something.com",
+    "secureVipAddress": "jq.test2.something.com",
+    "dataCenterInfo": {
+      "name": "MyOwn"
+    },
+    "status": "UP",
+    "homePageUrl": "localhost:3000",
+    "statusPageUrl": "localhost:3000/status",
+    "healthCheckUrl": "localhost:3000/healthCheck"
+  }
+}
