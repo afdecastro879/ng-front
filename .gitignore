@@ -1,11 +1,11 @@
 ### Yeoman template
-node_modules/
 *.log
 
 build/
 dist/
 
 ### Node template
+# Logs
 # Logs
 logs
 npm-debug.log*
