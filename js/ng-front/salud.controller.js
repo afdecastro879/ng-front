@@ -13,12 +13,12 @@
         $scope.current = {};
         $scope.currentOptions = {icon:'https://lh5.ggpht.com/gKl-6XRG106R4ZVnIW6gPQs2DLJK34Mg5bob6Hkr_icMRXtYodkuYTR1qWS8Zr-WH2BetB9e=h20'};
         FrontSvc.getParks($stateParams.idPet).then(function (data) {
-            $scope.map = { center: { latitude: data.data.pet.loc.coordinates[1], longitude: data.data.pet.loc.coordinates[0] }, zoom: 16 };
+            $scope.map = { center: { latitude: data.pet.loc.coordinates[1], longitude: data.pet.loc.coordinates[0] }, zoom: 16 };
             $scope.current = {
-                latitude: data.data.pet.loc.coordinates[1],
-                longitude: data.data.pet.loc.coordinates[0]
+                latitude: data.pet.loc.coordinates[1],
+                longitude: data.pet.loc.coordinates[0]
             };
-            $scope.docs = data.data.parks;
+            $scope.docs = data.parks;
             angular.forEach($scope.docs, function(value, key) {
                 var numEnfermos = 0;
                 angular.forEach(value.mascotas, function(value2, key2) {

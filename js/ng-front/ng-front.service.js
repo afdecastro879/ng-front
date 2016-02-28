@@ -8,10 +8,10 @@
     NGFrontService.$inject = ['Restangular', '$http'];
     function NGFrontService($rest, $http) {
         this.getPetLocationById = function (petId) {
-            return $rest.one('pet').one('location', petId).get();
-        }
+            return $rest.one('petsLocation', petId).get();
+        };
         this.getParks = function (petId) {
-            return $http.get("http://localhost:3001/park/"+petId);
+            return $rest.one('petsHealth', petId).get();
         }
     }
 })();

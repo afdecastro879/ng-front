@@ -4,7 +4,7 @@ angular
 
 restangularConfig.$inject = ['RestangularProvider'];
 function restangularConfig($restAngular) {
-    $restAngular.setBaseUrl("http://localhost:3000");
+    $restAngular.setBaseUrl("http://localhost:3002/service");
     //$restAngular.addRequestInterceptor(function (element, operation, what, url, headers, params, httpConfig) {
     //    if (operation === "remove") {
     //        return undefined;
