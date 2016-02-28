@@ -1,4 +1,7 @@
 {
   "name": "arq-ng-front",
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "dependencies":{
+    "http-server": "0.9.0"
+  }
 }

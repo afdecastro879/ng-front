@@ -13,7 +13,7 @@
         $locationProvider.html5Mode(false);
 
         // defaults to dashboard
-        $urlRouterProvider.otherwise('/home');
+        $urlRouterProvider.otherwise('/home/1');
 
         //
         // Application Routes
@@ -26,6 +26,11 @@
                 url: '/home/:idPet',
                 controller: 'NGFrontCtrl',
                 templateUrl: 'templates/views/home.html'
+            })
+            .state('salud', {
+                url: '/salud/:idPet',
+                controller: 'SaludCtrl',
+                templateUrl: 'templates/views/salud.html'
             })
         ;
     } // routesConfig
